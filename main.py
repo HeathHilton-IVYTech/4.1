@@ -9,14 +9,14 @@
 # Import the random module
 import random
 
-rando = random.randint(1, 10)
+secret = random.randint(1, 10)
 
 while True:
-    randoGuess = random.randint(1, 10)
-    if randoGuess == rando:
-        print("The number was {}. You Got IT!" .format(str(rando)))
+    guess = random.randint(1, 10)
+    if guess == secret:
+        print("The number was {}. You Got IT!" .format(str(secret)))
         break
-    elif randoGuess > rando:
+    elif guess > secret:
         print("Too High.")
     else:
         print("Too Low.")
